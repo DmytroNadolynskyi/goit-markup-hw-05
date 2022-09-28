@@ -346,14 +346,18 @@
       <div class="conteiner footer">
         <div class="footer-logo">
           <a href="./index.html" class="under-logo">
-            <spam class="half-logo">Web</spam><spam class="half-white">Studio</spam>
-          </a>
+            <spam class="half-logo">Web</spam>
+            <spam class="half-white">Studio</spam>
     
+    
+    
+          </a>
+          <div class="width-fix">
           <address class="address">
             <ul class="connect">
     
               <li class="footer-comm">
-                <a href="" class=" location">м. Київ, пр-т Лесі Українки, 26</a>
+                <a href="" class="location">м. Київ, пр-т Лесі Українки, 26</a>
               </li>
               <li class="footer-comm">
                 <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
@@ -363,6 +367,7 @@
               </li>
             </ul>
           </address>
+      </div>
         </div>
         <div>
           <p class="footer-text">ПРИЄДНУЙТЕСЬ</p>
@@ -398,8 +403,22 @@
             </li>
           </ul>
         </div>
+<div class="footer-subscribe">
+  <p class="subscribe-text">Підпишіться на розсилку</p>
+  <form class="footer-form">
+
+    <input class="footer-input" type="email" name="foot-email" placeholder="E-mail">
+    <div class="foot-button-image">
+    <button class="footer-button" type="submit">Підписатися</button>
+      <svg class="footer-plane">
+        <use href="./images/symbol-defs.svg#icon-send"></use>
+      </svg>
+    </div>
+  </form>
+
+</div>
       </div>
-    
+       
     
     </footer>
     
@@ -408,6 +427,31 @@
     </html>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form">
+          <p class="title-text">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form-field">
+          <label class="form-label" for="name">Ім'я</label> 
+          <input class="form-input" type="text" name="user-name" id="name" />
+          </div>
+          
+          <div class="form-field">
+          <label class="form-label" for="tel">Телефон</label>
+          <input class="form-input" type="tel" name="tel" id="tel">
+          </div>
+          <div class="form-field">
+          <label  class="form-label" for="email">Пошта</label>
+          <input class="form-input" type="email" name="email" id="email">
+          </div>
+          <div class="form-field">
+          <label class="form-label" for="comment">Коментар</label>
+          <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+          </div>
+          
+          <input  class="policy-check" type="checkbox" name="policy" id="policy">
+          <label class="policy-label" for="policy">Погоджуюся з розсилкою та приймаю <a href="" class="policy-link">Умови договору</a></label>
+          <button class="submit"type="submit">Відправити</button>
+          
+        </form>
     
         <button class="close" data-modal-close>
           <svg class="close-image">
